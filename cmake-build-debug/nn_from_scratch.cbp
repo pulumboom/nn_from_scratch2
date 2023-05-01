@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="nn_from_scratch"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nn_from_scratch">
+				<Option output="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/nn_from_scratch.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/layers"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/criterion"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/base"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/lib/eigen"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/lib/EigenRand"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 nn_from_scratch"/>
+					<CompileFile command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nn_from_scratch/fast">
+				<Option output="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/nn_from_scratch.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/layers"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/criterion"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/base"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/lib/eigen"/>
+					<Add directory="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/lib/EigenRand"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2022.2.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 nn_from_scratch/fast"/>
+					<CompileFile command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2022.2.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions/ReLU.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions/ReLU.h">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions/Sigmoid.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions/Sigmoid.h">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions/Softmax.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions/Softmax.h">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/criterion/CrossEntropyLoss.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/criterion/CrossEntropyLoss.h">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/criterion/MSE.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/criterion/MSE.h">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/layers/LinearLayer.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/layers/LinearLayer.h">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/layers/Sequential.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/layers/Sequential.h">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/main.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/optimizers/SGD.cpp">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/src/optimizers/SGD.h">
+			<Option target="nn_from_scratch"/>
+		</Unit>
+		<Unit filename="D:/university/курсач/neural_nertwork_from_scratch/nn_from_scratch2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
