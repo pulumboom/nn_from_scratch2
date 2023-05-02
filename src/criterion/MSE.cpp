@@ -1,10 +1,14 @@
 #include "MSE.h"
 
-double MSE::Forward(Base::Matrix &input, Base::Matrix &target) {
+double MSE::operator()(const Base::Matrix &input, const Base::Matrix &target) {
     output_ = (input - target).array().pow(2).mean();
     return output_;
 }
 
-Base::Matrix MSE::Backward(Base::Matrix &input, Base::Matrix &target) {
+double MSE::Forward(const Base::Matrix &input, const Base::Matrix &target) {
+    return (*this)(input, target);
+}
+
+Base::Matrix MSE::Backward(const Base::Matrix &input, const Base::Matrix &target) {
     return 2 * (input - target);
 }

@@ -1,10 +1,10 @@
 #pragma once
 
-#include "OptimizerBase.h"
+#include "OptimizerInterface.h"
 #include "ModuleTypeErasure.h"
 
 namespace Optimizers {
-    class SGD : public Base::OptimizerBase {
+    class SGD : public Base::OptimizerInterface {
     public:
         SGD(Base::ModuleTypeErasure module, double learning_rate, double momentum, double weight_decay);
         SGD(Base::ModuleTypeErasure module, double learning_rate, double momentum);

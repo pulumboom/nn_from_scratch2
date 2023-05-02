@@ -1,12 +1,15 @@
 #pragma once
 
-#include "CriterionBase.h"
+#include "CriterionInterface.h"
 
-class CrossEntropyLoss : public Base::CriterionBase {
+class CrossEntropyLoss {
 public:
-    double Forward(Base::Matrix &input, Base::Matrix &target) override;
-    Base::Matrix Backward(Base::Matrix &input, Base::Matrix &target) override;
+    double operator()(const Base::Matrix &input, const Base::Matrix &target);
+
+    double Forward(const Base::Matrix &input, const Base::Matrix &target);
+
+    Base::Matrix Backward(const Base::Matrix &input, const Base::Matrix &target);
 
 private:
-//todo
+    double output_;
 };

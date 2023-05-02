@@ -1,10 +1,14 @@
 #include "Softmax.h"
 
-Base::Matrix AF::Softmax::Forward(const Base::Matrix &input) {
+Base::Matrix AF::Softmax::operator()(const Base::Matrix &input) {
     output_ = input.array().exp();
     Eigen::VectorXd column_sum = output_.colwise().sum();
     output_.array().rowwise() /= column_sum.array().transpose();
     return output_;
+}
+
+Base::Matrix AF::Softmax::Forward(const Base::Matrix &input) {
+    return (*this)(input);
 }
 
 Base::Matrix AF::Softmax::Backward(const Base::Matrix &input, const Base::Matrix &grad_output) {
@@ -15,4 +19,12 @@ Base::Matrix AF::Softmax::Backward(const Base::Matrix &input, const Base::Matrix
 
 void AF::Softmax::ResetGrad() {}
 
-void AF::Softmax::UpdateParameters(const Base::Matrix &input, Base::Matrix &grad_output) {}
+void AF::Softmax::SwitchToTrainMode() {}
+
+void AF::Softmax::SwitchToTestMode() {}
+
+const Base::Matrix &AF::Softmax::Output() const {}
+
+std::vector<Base::Matrix*> AF::Softmax::GetParameters() {}
+
+std::vector<Base::Matrix*> AF::Softmax::GetGradients() {}

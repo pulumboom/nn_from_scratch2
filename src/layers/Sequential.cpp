@@ -1,8 +1,6 @@
 #include "Sequential.h"
 
-Layers::Sequential::Sequential(std::vector<Base::ModuleTypeErasure> layers) : layers_(std::move(layers)) {}
-
-Base::Matrix Layers::Sequential::Forward(const Base::Matrix &input) {
+Base::Matrix Layers::Sequential::operator()(const Base::Matrix &input) {
     output_ = input;
     for (auto &layer : layers_) {
         output_ = layer->Forward(input);
@@ -10,18 +8,21 @@ Base::Matrix Layers::Sequential::Forward(const Base::Matrix &input) {
     return output_;
 }
 
+Base::Matrix Layers::Sequential::Forward(const Base::Matrix &input) {
+    return (*this)(input);
+}
+
 Base::Matrix Layers::Sequential::Backward(const Base::Matrix &input, const Base::Matrix &grad_output) {
     output_ = Forward(input);
+    Base::Matrix grad = grad_output;
     for (int i = layers_.size() - 1; i > -1; --i) {
         if (i > 0) {
-            layers_[i]->UpdateParameters(layers_[i - 1]->Output(), grad_output);
-            grad_output = layers_[i]->Backward(layers_[i - 1]->Output(), grad_output);
+            grad = layers_[i]->Backward(layers_[i - 1]->Output(), grad);
         } else {
-            layers_[i]->UpdateParameters(input, grad_output);
-            grad_output = layers_[i]->Backward(input, grad_output);
+            grad = layers_[i]->Backward(input, grad);
         }
     }
-    return grad_output;
+    return grad;
 }
 
 void Layers::Sequential::ResetGrad() {
@@ -30,4 +31,36 @@ void Layers::Sequential::ResetGrad() {
     }
 }
 
-void Layers::Sequential::UpdateParameters(const Base::Matrix &input, Base::Matrix &grad_output) {}
+void Layers::Sequential::SwitchToTrainMode() {
+    for (auto &layer : layers_) {
+        layer->SwitchToTrainMode();
+    }
+}
+
+void Layers::Sequential::SwitchToTestMode() {
+    for (auto &layer : layers_) {
+        layer->SwitchToTestMode();
+    }
+}
+
+const Base::Matrix &Layers::Sequential::Output() const {
+    return output_;
+}
+
+std::vector<Base::Matrix*> Layers::Sequential::GetParameters() {
+    std::vector<Base::Matrix*> parameters;
+    for (auto &layer : layers_) {
+        for (auto param : layer->GetParameters()) {
+            parameters.push_back(param);
+        }
+    }
+}
+
+std::vector<Base::Matrix*> Layers::Sequential::GetGradients() {
+    std::vector<Base::Matrix*> gradients;
+    for (auto &layer : layers_) {
+        for (auto grad : layer->GetGradients()) {
+            gradients.push_back(grad);
+        }
+    }
+}

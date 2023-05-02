@@ -1,12 +1,16 @@
 #include "CrossEntropyLoss.h"
 
-double CrossEntropyLoss::Forward(Base::Matrix &input, Base::Matrix &target) {
+double CrossEntropyLoss::operator()(const Base::Matrix &input, const Base::Matrix &target) {
 //   output_ = -1 /
     return 0.0;
     //todo
 }
 
-Base::Matrix CrossEntropyLoss::Backward(Base::Matrix &input, Base::Matrix &target) {
+double CrossEntropyLoss::Forward(const Base::Matrix &input, const Base::Matrix &target) {
+    return (*this)(input, target);
+}
+
+Base::Matrix CrossEntropyLoss::Backward(const Base::Matrix &input, const Base::Matrix &target) {
     return Base::Matrix();
     //todo
 }

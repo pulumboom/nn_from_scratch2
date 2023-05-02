@@ -3,28 +3,38 @@
 #include <vector>
 #include <any>
 
-#include "ModuleBase.h"
+#include "ModuleInterface.h"
 #include "ModuleTypeErasure.h"
 
 namespace Layers {
-    class Sequential : public Base::ModuleBase {
+    class Sequential {
     public:
         template<typename... Layers>
         Sequential(Layers&&... layers) {
             layers_.reserve(sizeof...(Layers));
             auto i = {layers_.emplace_back(std::forward<Layers>(layers))...};
         }
-        Sequential(std::vector<Base::ModuleTypeErasure> layers);
+        
+        Base::Matrix operator()(const Base::Matrix &input);
+        
+        Base::Matrix Forward(const Base::Matrix &input);
 
-        Base::Matrix Forward(const Base::Matrix &input) override;
+        Base::Matrix Backward(const Base::Matrix &input, const Base::Matrix &grad_output);
 
-        Base::Matrix Backward(const Base::Matrix &input, const Base::Matrix &grad_output) override;
-
-        void ResetGrad() override;
-
-        void UpdateParameters(const Base::Matrix &input, Base::Matrix &grad_output) override;
+        void ResetGrad();
+        
+        void SwitchToTrainMode();
+        
+        void SwitchToTestMode();
+        
+        const Base::Matrix &Output() const;
+        
+        std::vector<Base::Matrix*> GetParameters();
+        
+        std::vector<Base::Matrix*> GetGradients();
 
     private:
+        Base::Matrix output_;
         std::vector<Base::ModuleTypeErasure> layers_;
     };
 }

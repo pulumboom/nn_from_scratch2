@@ -1,16 +1,28 @@
 #pragma once
 
-#include "ModuleBase.h"
+#include "ModuleInterface.h"
 
 namespace AF {
-    class Softmax : public Base::ModuleBase {
+    class Softmax {
     public:
-        Base::Matrix Forward(const Base::Matrix &input) override;
+        Base::Matrix operator()(const Base::Matrix &input);
 
-        Base::Matrix Backward(const Base::Matrix &input, const Base::Matrix &grad_output) override;
+        Base::Matrix Forward(const Base::Matrix &input);
 
-        void ResetGrad() override;
+        Base::Matrix Backward(const Base::Matrix &input, const Base::Matrix &grad_output);
 
-        void UpdateParameters(const Base::Matrix &input, Base::Matrix &grad_output) override;
+        void ResetGrad();
+
+        void SwitchToTrainMode();
+
+        void SwitchToTestMode();
+
+        const Base::Matrix &Output() const;
+
+        std::vector<Base::Matrix*> GetParameters();
+
+        std::vector<Base::Matrix*> GetGradients();
+    private:
+        Base::Matrix output_;
     };
 }

@@ -1,5 +1,3 @@
-//#include "nn/MLP.h"
-
 #include <Eigen/Dense>
 #include <iostream>
 #include <vector>
@@ -8,6 +6,8 @@
 #include "LinearLayer.h"
 #include "ReLU.h"
 #include "Sequential.h"
+#include "OptimizerTypeErasure.h"
+#include "CriterionTypeErasure.h"
 
 namespace {
     using Eigen::MatrixXd;
@@ -22,6 +22,6 @@ namespace {
 }
 
 int main() {
-//    std::vector<Base::ModuleTypeErasure> mm = {Layers::LinearLayer(1, 2), AF::ReLU()};
+    std::vector<Base::ModuleTypeErasure> mm = {Layers::LinearLayer(1, 2), AF::ReLU()};
     Layers::LinearLayer ll(2, 3);
 }
