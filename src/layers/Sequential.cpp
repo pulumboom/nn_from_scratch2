@@ -3,7 +3,7 @@
 Base::Matrix Layers::Sequential::operator()(const Base::Matrix &input) {
     output_ = input;
     for (auto &layer : layers_) {
-        output_ = layer->Forward(input);
+        output_ = layer->Forward(output_);
     }
     return output_;
 }
@@ -54,6 +54,7 @@ std::vector<Base::Matrix*> Layers::Sequential::GetParameters() {
             parameters.push_back(param);
         }
     }
+    return parameters;
 }
 
 std::vector<Base::Matrix*> Layers::Sequential::GetGradients() {
@@ -63,4 +64,5 @@ std::vector<Base::Matrix*> Layers::Sequential::GetGradients() {
             gradients.push_back(grad);
         }
     }
+    return gradients;
 }

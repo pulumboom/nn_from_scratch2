@@ -52,10 +52,10 @@ RM = "D:\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2
+CMAKE_SOURCE_DIR = D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug
+CMAKE_BINARY_DIR = D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/nn_from_scratch.dir/depend.make
@@ -72,136 +72,136 @@ CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.obj: CMakeFiles/nn_fro
 CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.obj: ../src/layers/LinearLayer.cpp
 CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\layers\LinearLayer.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\layers\LinearLayer.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\LinearLayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\layers\LinearLayer.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\layers\LinearLayer.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\LinearLayer.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\LinearLayer.cpp > CMakeFiles\nn_from_scratch.dir\src\layers\LinearLayer.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\LinearLayer.cpp > CMakeFiles\nn_from_scratch.dir\src\layers\LinearLayer.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/layers/LinearLayer.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\LinearLayer.cpp -o CMakeFiles\nn_from_scratch.dir\src\layers\LinearLayer.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\LinearLayer.cpp -o CMakeFiles\nn_from_scratch.dir\src\layers\LinearLayer.cpp.s
 
 CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.obj: CMakeFiles/nn_from_scratch.dir/flags.make
 CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.obj: ../src/layers/Sequential.cpp
 CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\layers\Sequential.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\layers\Sequential.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\Sequential.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\layers\Sequential.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\layers\Sequential.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\Sequential.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\Sequential.cpp > CMakeFiles\nn_from_scratch.dir\src\layers\Sequential.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\Sequential.cpp > CMakeFiles\nn_from_scratch.dir\src\layers\Sequential.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/layers/Sequential.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\Sequential.cpp -o CMakeFiles\nn_from_scratch.dir\src\layers\Sequential.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\layers\Sequential.cpp -o CMakeFiles\nn_from_scratch.dir\src\layers\Sequential.cpp.s
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.obj: CMakeFiles/nn_from_scratch.dir/flags.make
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.obj: ../src/activation_functions/ReLU.cpp
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\activation_functions\ReLU.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\ReLU.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\ReLU.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\activation_functions\ReLU.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\ReLU.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\ReLU.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\ReLU.cpp > CMakeFiles\nn_from_scratch.dir\src\activation_functions\ReLU.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\ReLU.cpp > CMakeFiles\nn_from_scratch.dir\src\activation_functions\ReLU.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/activation_functions/ReLU.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\ReLU.cpp -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\ReLU.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\ReLU.cpp -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\ReLU.cpp.s
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.obj: CMakeFiles/nn_from_scratch.dir/flags.make
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.obj: ../src/activation_functions/Sigmoid.cpp
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\activation_functions\Sigmoid.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\Sigmoid.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Sigmoid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\activation_functions\Sigmoid.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\Sigmoid.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Sigmoid.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Sigmoid.cpp > CMakeFiles\nn_from_scratch.dir\src\activation_functions\Sigmoid.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Sigmoid.cpp > CMakeFiles\nn_from_scratch.dir\src\activation_functions\Sigmoid.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/activation_functions/Sigmoid.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Sigmoid.cpp -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\Sigmoid.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Sigmoid.cpp -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\Sigmoid.cpp.s
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.obj: CMakeFiles/nn_from_scratch.dir/flags.make
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.obj: ../src/activation_functions/Softmax.cpp
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\activation_functions\Softmax.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\Softmax.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Softmax.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\activation_functions\Softmax.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\Softmax.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Softmax.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Softmax.cpp > CMakeFiles\nn_from_scratch.dir\src\activation_functions\Softmax.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Softmax.cpp > CMakeFiles\nn_from_scratch.dir\src\activation_functions\Softmax.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/activation_functions/Softmax.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Softmax.cpp -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\Softmax.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\activation_functions\Softmax.cpp -o CMakeFiles\nn_from_scratch.dir\src\activation_functions\Softmax.cpp.s
 
 CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.obj: CMakeFiles/nn_from_scratch.dir/flags.make
 CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.obj: ../src/criterion/MSE.cpp
 CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\criterion\MSE.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\criterion\MSE.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\MSE.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\criterion\MSE.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\criterion\MSE.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\MSE.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\MSE.cpp > CMakeFiles\nn_from_scratch.dir\src\criterion\MSE.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\MSE.cpp > CMakeFiles\nn_from_scratch.dir\src\criterion\MSE.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/criterion/MSE.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\MSE.cpp -o CMakeFiles\nn_from_scratch.dir\src\criterion\MSE.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\MSE.cpp -o CMakeFiles\nn_from_scratch.dir\src\criterion\MSE.cpp.s
 
 CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.obj: CMakeFiles/nn_from_scratch.dir/flags.make
 CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.obj: ../src/criterion/CrossEntropyLoss.cpp
 CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\criterion\CrossEntropyLoss.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\criterion\CrossEntropyLoss.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\CrossEntropyLoss.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\criterion\CrossEntropyLoss.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\criterion\CrossEntropyLoss.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\CrossEntropyLoss.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\CrossEntropyLoss.cpp > CMakeFiles\nn_from_scratch.dir\src\criterion\CrossEntropyLoss.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\CrossEntropyLoss.cpp > CMakeFiles\nn_from_scratch.dir\src\criterion\CrossEntropyLoss.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/criterion/CrossEntropyLoss.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\CrossEntropyLoss.cpp -o CMakeFiles\nn_from_scratch.dir\src\criterion\CrossEntropyLoss.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\criterion\CrossEntropyLoss.cpp -o CMakeFiles\nn_from_scratch.dir\src\criterion\CrossEntropyLoss.cpp.s
 
 CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.obj: CMakeFiles/nn_from_scratch.dir/flags.make
 CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.obj: ../src/optimizers/SGD.cpp
 CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\optimizers\SGD.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\optimizers\SGD.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\optimizers\SGD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\optimizers\SGD.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\optimizers\SGD.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\optimizers\SGD.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\optimizers\SGD.cpp > CMakeFiles\nn_from_scratch.dir\src\optimizers\SGD.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\optimizers\SGD.cpp > CMakeFiles\nn_from_scratch.dir\src\optimizers\SGD.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/optimizers/SGD.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\optimizers\SGD.cpp -o CMakeFiles\nn_from_scratch.dir\src\optimizers\SGD.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\optimizers\SGD.cpp -o CMakeFiles\nn_from_scratch.dir\src\optimizers\SGD.cpp.s
 
 CMakeFiles/nn_from_scratch.dir/src/main.cpp.obj: CMakeFiles/nn_from_scratch.dir/flags.make
 CMakeFiles/nn_from_scratch.dir/src/main.cpp.obj: CMakeFiles/nn_from_scratch.dir/includes_CXX.rsp
 CMakeFiles/nn_from_scratch.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/nn_from_scratch.dir/src/main.cpp.obj: CMakeFiles/nn_from_scratch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/main.cpp.obj"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/main.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\main.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\main.cpp.obj -c D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/nn_from_scratch.dir/src/main.cpp.obj"
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nn_from_scratch.dir/src/main.cpp.obj -MF CMakeFiles\nn_from_scratch.dir\src\main.cpp.obj.d -o CMakeFiles\nn_from_scratch.dir\src\main.cpp.obj -c D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\main.cpp
 
 CMakeFiles/nn_from_scratch.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nn_from_scratch.dir/src/main.cpp.i"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\main.cpp > CMakeFiles\nn_from_scratch.dir\src\main.cpp.i
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\main.cpp > CMakeFiles\nn_from_scratch.dir\src\main.cpp.i
 
 CMakeFiles/nn_from_scratch.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nn_from_scratch.dir/src/main.cpp.s"
-	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\src\main.cpp -o CMakeFiles\nn_from_scratch.dir\src\main.cpp.s
+	"D:\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\src\main.cpp -o CMakeFiles\nn_from_scratch.dir\src\main.cpp.s
 
 # Object files for target nn_from_scratch
 nn_from_scratch_OBJECTS = \
@@ -231,7 +231,7 @@ nn_from_scratch.exe: CMakeFiles/nn_from_scratch.dir/build.make
 nn_from_scratch.exe: CMakeFiles/nn_from_scratch.dir/linklibs.rsp
 nn_from_scratch.exe: CMakeFiles/nn_from_scratch.dir/objects1.rsp
 nn_from_scratch.exe: CMakeFiles/nn_from_scratch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable nn_from_scratch.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable nn_from_scratch.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\nn_from_scratch.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -243,6 +243,6 @@ CMakeFiles/nn_from_scratch.dir/clean:
 .PHONY : CMakeFiles/nn_from_scratch.dir/clean
 
 CMakeFiles/nn_from_scratch.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2 D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2 D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug D:\university\курсач\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles\nn_from_scratch.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2 D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2 D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug D:\university\cursach\neural_nertwork_from_scratch\nn_from_scratch2\cmake-build-debug\CMakeFiles\nn_from_scratch.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/nn_from_scratch.dir/depend
 

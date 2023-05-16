@@ -38,8 +38,8 @@ namespace Layers {
         Base::Matrix output_;
         Base::Matrix weights_; // in_features x out_features
         Base::Matrix grad_for_weights_; // in_features x out_features
-        std::unique_ptr<Vector> bias_ = nullptr; // out_features x 1
-        std::unique_ptr<Vector> grad_for_bias_ = nullptr; // out_features x 1
+        std::unique_ptr<Base::Matrix> bias_ = nullptr; // out_features x 1
+        std::unique_ptr<Base::Matrix> grad_for_bias_ = nullptr; // out_features x 1
         bool has_bias_ = true;
         bool training_mode_ = false;
     };

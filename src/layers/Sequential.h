@@ -12,7 +12,9 @@ namespace Layers {
         template<typename... Layers>
         Sequential(Layers&&... layers) {
             layers_.reserve(sizeof...(Layers));
-            auto i = {layers_.emplace_back(std::forward<Layers>(layers))...};
+            ([&]{
+                layers_.emplace_back(std::move(layers));
+            }(), ...);
         }
         
         Base::Matrix operator()(const Base::Matrix &input);

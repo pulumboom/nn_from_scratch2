@@ -15,6 +15,7 @@ Base::Matrix AF::Softmax::Backward(const Base::Matrix &input, const Base::Matrix
     output_ = Forward(input);
 //    dinput = -output_.rowwise().transpose() * output_.array()
     // todo
+    return {};
 }
 
 void AF::Softmax::ResetGrad() {}
@@ -23,8 +24,14 @@ void AF::Softmax::SwitchToTrainMode() {}
 
 void AF::Softmax::SwitchToTestMode() {}
 
-const Base::Matrix &AF::Softmax::Output() const {}
+const Base::Matrix &AF::Softmax::Output() const {
+    return output_;
+}
 
-std::vector<Base::Matrix*> AF::Softmax::GetParameters() {}
+std::vector<Base::Matrix*> AF::Softmax::GetParameters() {
+    return {};
+}
 
-std::vector<Base::Matrix*> AF::Softmax::GetGradients() {}
+std::vector<Base::Matrix*> AF::Softmax::GetGradients() {
+    return {};
+}

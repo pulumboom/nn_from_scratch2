@@ -6,10 +6,10 @@ Layers::LinearLayer::LinearLayer(long long in_features, long long out_features, 
         : grad_for_weights_(Base::Matrix::Zero(in_features, out_features)),
           has_bias_(has_bias) {
     Eigen::Rand::P8_mt19937_64 urng = {seed};
-    weights_ = Eigen::Rand::normal<Base::Matrix>(in_features, out_features, urng);
+    weights_ = Eigen::Rand::normal<Base::Matrix>(out_features, in_features, urng);
     if (has_bias_) {
-        *bias_ = Eigen::Rand::normal<Vector>(-1, out_features, urng);
-        *grad_for_bias_ = Vector::Zero(out_features);
+        bias_ = std::make_unique<Base::Matrix>(Eigen::Rand::normal<Base::Matrix>(out_features, 1, urng));
+        grad_for_bias_ = std::make_unique<Base::Matrix>(Base::Matrix::Zero(out_features, 1));
     }
 }
 
@@ -27,13 +27,16 @@ Layers::LinearLayer::LinearLayer(const Layers::LinearLayer &other)
         grad_for_weights_(other.grad_for_weights_),
         has_bias_(other.has_bias_) {
     if (has_bias_) {
-        bias_ = std::make_unique<Vector>(*other.bias_);
-        grad_for_bias_ = std::make_unique<Vector>(*other.grad_for_bias_);
+        bias_ = std::make_unique<Base::Matrix>(*other.bias_);
+        grad_for_bias_ = std::make_unique<Base::Matrix>(*other.grad_for_bias_);
     }
 }
 
 Base::Matrix Layers::LinearLayer::operator()(const Base::Matrix &input) {
-    output_ = (input * weights_.transpose()).rowwise() + (*bias_).transpose();
+    output_ = input * weights_.transpose();
+    if (has_bias_) {
+        output_ = (output_).array() + (*bias_).transpose().array();
+    }
     return output_;
 }
 
@@ -76,16 +79,17 @@ const Base::Matrix &Layers::LinearLayer::Output() const {
 std::vector<Base::Matrix*> Layers::LinearLayer::GetParameters() {
     std::vector<Base::Matrix*> parameters;
     parameters.push_back(&weights_);
-    std::vector<Base::Matrix> p;
     if (has_bias_) {
-        parameters.push_back((Base::Matrix*)bias_.get());
+        parameters.push_back(bias_.get());
     }
+    return parameters;
 }
 
 std::vector<Base::Matrix*> Layers::LinearLayer::GetGradients() {
     std::vector<Base::Matrix*> gradients;
     gradients.push_back(&grad_for_weights_);
     if (has_bias_) {
-        gradients.push_back((Base::Matrix*)grad_for_bias_.get());
+        gradients.push_back(grad_for_bias_.get());
     }
+    return gradients;
 }

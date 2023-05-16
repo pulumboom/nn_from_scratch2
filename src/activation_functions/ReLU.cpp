@@ -22,6 +22,10 @@ const Base::Matrix &AF::ReLU::Output() const {
     return output_;
 }
 
-std::vector<Base::Matrix*> AF::ReLU::GetParameters() {}
+std::vector<Base::Matrix*> AF::ReLU::GetParameters() {
+    return {};
+}
 
-std::vector<Base::Matrix*> AF::ReLU::GetGradients() {}
+std::vector<Base::Matrix*> AF::ReLU::GetGradients() {
+    return {};
+}

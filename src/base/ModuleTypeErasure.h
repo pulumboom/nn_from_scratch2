@@ -10,7 +10,7 @@ namespace Base {
 
         template<typename T>
         ModuleTypeErasure(T &&layer) : model_(
-                std::make_unique<Module<T>>(std::move(std::forward<T>(layer)))
+                std::make_unique<Module<T>>(std::move(layer))
         ) {}
 
         ModuleTypeErasure(const ModuleTypeErasure &other) : model_(
@@ -39,17 +39,17 @@ namespace Base {
     private:
         template<typename T>
         struct Module : ModuleInterface {
-            Module(T layer) : layer_(std::move(layer)) {}
+            Module(T &&layer) : layer_(std::move(layer)) {}
 
-            const Matrix &operator()(const Matrix &input) override {
+            Matrix operator()(const Matrix &input) override {
                 return layer_(input);
             }
 
-            const Matrix &Forward(const Matrix &input) override {
+            Matrix Forward(const Matrix &input) override {
                 return layer_(input);
             }
 
-            const Matrix &Backward(const Matrix &input, const Matrix &grad_output) override {
+            Matrix Backward(const Matrix &input, const Matrix &grad_output) override {
                 return layer_.Backward(input, grad_output);
             }
 

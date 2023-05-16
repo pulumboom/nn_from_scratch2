@@ -11,11 +11,11 @@ namespace Base {
     public:
         virtual ~ModuleInterface() = default;
 
-        virtual const Matrix &operator()(const Matrix &) = 0;
+        virtual Matrix operator()(const Matrix &) = 0;
 
-        virtual const Matrix &Forward(const Matrix &) = 0;
+        virtual Matrix Forward(const Matrix &) = 0;
 
-        virtual const Matrix &Backward(const Matrix &, const Matrix &) = 0;
+        virtual Matrix Backward(const Matrix &, const Matrix &) = 0;
 
         virtual void ResetGrad() = 0;
 

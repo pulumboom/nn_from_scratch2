@@ -24,6 +24,10 @@ const Base::Matrix &AF::Sigmoid::Output() const {
     return output_;
 }
 
-std::vector<Base::Matrix*> AF::Sigmoid::GetParameters() {}
+std::vector<Base::Matrix*> AF::Sigmoid::GetParameters() {
+    return {};
+}
 
-std::vector<Base::Matrix*> AF::Sigmoid::GetGradients() {}
+std::vector<Base::Matrix*> AF::Sigmoid::GetGradients() {
+    return {};
+}

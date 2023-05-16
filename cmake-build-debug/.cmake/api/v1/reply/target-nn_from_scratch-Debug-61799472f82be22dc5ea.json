@@ -85,27 +85,27 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/university/\u043a\u0443\u0440\u0441\u0430\u0447/neural_nertwork_from_scratch/nn_from_scratch2/src/layers"
+					"path" : "D:/university/cursach/neural_nertwork_from_scratch/nn_from_scratch2/src/layers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/university/\u043a\u0443\u0440\u0441\u0430\u0447/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions"
+					"path" : "D:/university/cursach/neural_nertwork_from_scratch/nn_from_scratch2/src/activation_functions"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/university/\u043a\u0443\u0440\u0441\u0430\u0447/neural_nertwork_from_scratch/nn_from_scratch2/src/criterion"
+					"path" : "D:/university/cursach/neural_nertwork_from_scratch/nn_from_scratch2/src/criterion"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "D:/university/\u043a\u0443\u0440\u0441\u0430\u0447/neural_nertwork_from_scratch/nn_from_scratch2/src/base"
+					"path" : "D:/university/cursach/neural_nertwork_from_scratch/nn_from_scratch2/src/base"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "D:/university/\u043a\u0443\u0440\u0441\u0430\u0447/neural_nertwork_from_scratch/nn_from_scratch2/lib/eigen"
+					"path" : "D:/university/cursach/neural_nertwork_from_scratch/nn_from_scratch2/lib/eigen"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "D:/university/\u043a\u0443\u0440\u0441\u0430\u0447/neural_nertwork_from_scratch/nn_from_scratch2/lib/EigenRand"
+					"path" : "D:/university/cursach/neural_nertwork_from_scratch/nn_from_scratch2/lib/EigenRand"
 				}
 			],
 			"language" : "CXX",
