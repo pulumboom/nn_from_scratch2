@@ -17,6 +17,6 @@ namespace Base {
 
         virtual Matrix Backward(const Matrix &, const Matrix &) = 0;
         
-        virtual std::unique_ptr<CriterionInterface> MakeCopy_() const = 0;
+//        virtual std::unique_ptr<CriterionInterface> MakeCopy_() const = 0;
     };
 }

@@ -3,7 +3,7 @@
 #include "LinearLayer.h"
 
 Layers::LinearLayer::LinearLayer(long long in_features, long long out_features, bool has_bias, size_t seed)
-        : grad_for_weights_(Base::Matrix::Zero(in_features, out_features)),
+        : grad_for_weights_(Base::Matrix::Zero(out_features, in_features)),
           has_bias_(has_bias) {
     Eigen::Rand::P8_mt19937_64 urng = {seed};
     weights_ = Eigen::Rand::normal<Base::Matrix>(out_features, in_features, urng);
@@ -34,8 +34,9 @@ Layers::LinearLayer::LinearLayer(const Layers::LinearLayer &other)
 
 Base::Matrix Layers::LinearLayer::operator()(const Base::Matrix &input) {
     output_ = input * weights_.transpose();
+    Layers::Vector b = *bias_;
     if (has_bias_) {
-        output_ = (output_).array() + (*bias_).transpose().array();
+        output_.rowwise() += b.transpose();
     }
     return output_;
 }
@@ -50,7 +51,7 @@ Base::Matrix Layers::LinearLayer::Backward(const Base::Matrix &input, const Base
     grad_for_weights_ += grad_output.transpose() * input;
     
     if (has_bias_) {
-        *grad_for_bias_ += grad_output.colwise().sum();
+        *grad_for_bias_ += grad_output.colwise().sum().transpose();
     }
     
     return grad_output * weights_;

@@ -9,19 +9,19 @@ namespace Base {
         OptimizerTypeErasure() = default;
         
         template<typename T>
-        OptimizerTypeErasure(T &&optimizer) : model_(
-                std::make_unique<Optimizer<T>>(std::move(std::forward<T>(optimizer)))
-                ) {}
+        OptimizerTypeErasure(T &&optimizer) : model_(std::make_unique<Optimizer<T>>(std::move(optimizer))) {
+            
+        }
 
-        OptimizerTypeErasure(const OptimizerTypeErasure &other) : model_(
-                other.isDefined() ? other.model_->MakeCopy_() : nullptr
-                ) {}
+//        OptimizerTypeErasure(const OptimizerTypeErasure &other) : model_(
+//                other.isDefined() ? other.model_->MakeCopy_() : nullptr
+//                ) {}
 
         OptimizerTypeErasure(OptimizerTypeErasure &&) noexcept = default;
 
-        OptimizerTypeErasure &operator=(const OptimizerTypeErasure &other) {
-            return *this = OptimizerTypeErasure(other);
-        }
+//        OptimizerTypeErasure &operator=(const OptimizerTypeErasure &other) {
+//            return *this = OptimizerTypeErasure(other);
+//        }
 
         OptimizerTypeErasure &operator=(OptimizerTypeErasure &&) noexcept = default;
 
@@ -40,15 +40,15 @@ namespace Base {
     private:
         template<typename T>
         struct Optimizer : OptimizerInterface {
-            Optimizer(T optimizer) : optimizer_(std::move(optimizer)) {}
+            Optimizer(T &&optimizer) : optimizer_(std::move(optimizer)) {}
             
             void MakeStep() override {
                 optimizer_.MakeStep();
             }
             
-            std::unique_ptr<OptimizerInterface> MakeCopy_() const override {
-                return std::make_unique<Optimizer>(*this);
-            }
+//            std::unique_ptr<OptimizerInterface> MakeCopy_() const override {
+//                return std::make_unique<Optimizer>(*this);
+//            }
             
             T optimizer_;
         };

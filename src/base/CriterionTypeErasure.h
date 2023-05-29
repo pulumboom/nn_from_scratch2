@@ -10,17 +10,17 @@ namespace Base {
 
         template<typename T>
         CriterionTypeErasure(T &&criterion) : model_(
-                std::make_unique<Criterion<T>>(std::move(std::forward<T>(criterion)))
+                std::make_unique<Criterion<T>>(std::move(criterion))
         ) {}
 
-        CriterionTypeErasure(const CriterionTypeErasure &other) : model_(
-                other.isDefined() ? other.model_->MakeCopy_() : nullptr) {}
+//        CriterionTypeErasure(const CriterionTypeErasure &other) : model_(
+//                other.isDefined() ? other.model_->MakeCopy_() : nullptr) {}
 
         CriterionTypeErasure(CriterionTypeErasure &&) noexcept = default;
 
-        CriterionTypeErasure &operator=(const CriterionTypeErasure &other) {
-            return *this = CriterionTypeErasure(other);
-        }
+//        CriterionTypeErasure &operator=(const CriterionTypeErasure &other) {
+//            return *this = CriterionTypeErasure(other);
+//        }
 
         CriterionTypeErasure &operator=(CriterionTypeErasure &&) noexcept = default;
 
@@ -39,7 +39,7 @@ namespace Base {
     private:
         template<typename T>
         struct Criterion : CriterionInterface {
-            Criterion(T criterion) : criterion_(std::move(criterion)) {}
+            Criterion(T &&criterion) : criterion_(std::move(criterion)) {}
 
             double operator()(const Matrix &input, const Matrix &target) override {
                 return criterion_(input, target);
@@ -53,9 +53,9 @@ namespace Base {
                 return criterion_.Backward(input, target);
             }
 
-            std::unique_ptr<CriterionInterface> MakeCopy_() const override {
-                return std::make_unique<Criterion>(*this);
-            }
+//            std::unique_ptr<CriterionInterface> MakeCopy_() const override {
+//                return std::make_unique<Criterion>(*this);
+//            }
 
             T criterion_;
         };

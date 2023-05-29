@@ -1,66 +1,101 @@
 #include <Eigen/Dense>
 #include <EigenRand/EigenRand>
+#include <unsupported/Eigen/CXX11/Tensor>
 #include <iostream>
 #include <vector>
-#include <any>
-#include <memory>
 
 #include "LinearLayer.h"
 #include "ReLU.h"
+#include "Softmax.h"
 #include "Sequential.h"
 #include "OptimizerTypeErasure.h"
 #include "CriterionTypeErasure.h"
+#include "DataProcessing.h"
+#include "SGD.h"
+#include "MSE.h"
 
 namespace {
     using Eigen::MatrixXd;
     using Eigen::VectorXd;
+    using Matrix = Eigen::MatrixXd;
 
-    template<typename T>
-    int foo(T x) {
-        int y = x;
-        y++;
-        return y;
-    }
-    
-    template<typename T>
-    void print(std::vector<T> x) {
-        std::cout << "size: " << x.size() << std::endl;
-        for (auto &y : x) {
-            std::cout << *y << "\n----\n";
+    void Train(
+            Layers::Sequential &module,
+            Optimizers::SGD &optimizer,
+            Criterion::MSE &criterion,
+            Matrix &X,
+            Matrix &y,
+            long long batch_size,
+            int epochs,
+            bool debug = true) {
+        for (int epoch = 0; epoch < epochs; ++epoch) {
+            double epoch_loss = 0;
+//            for (long long batch = 0; batch < X.rows(); batch += batch_size) {
+            for (long long batch = 0; batch < 20; batch += batch_size) {
+                auto batch_data = X.block(
+                        batch,
+                        0,
+                        std::min(X.rows() - batch, batch_size),
+                        X.cols());
+                auto batch_labels = y.block(
+                        batch,
+                        0,
+                        std::min(X.rows() - batch, batch_size),
+                        y.cols());
+                auto oneHotClasses = Utils::DataProcessing::OneHotEncode(batch_labels, 10);
+                  
+                auto output = module.Forward(batch_data);
+                module.ResetGrad();
+                double loss = criterion.Forward(output, oneHotClasses);
+                epoch_loss += loss;
+                module.Backward(batch_data, criterion.Backward(output, oneHotClasses));
+                optimizer.MakeStep();
+            }
+            if (debug) {
+                std::cout << std::fixed << "Epoch #" << epoch + 1 << ". Loss: " << epoch_loss << std::endl;
+            }
         }
-        std::cout << std::endl;
     }
-    
-    template<typename... T>
-    void print(T... x) {
-        std::vector<int> result;
-        auto i = {result.push_back(x)...};
-        for (int i : result) {
-            std::cout << i << ' ';
+
+    void Eval(
+            Layers::Sequential &module,
+            Criterion::MSE &criterion,
+            Matrix &X,
+            Matrix &y,
+            long long batch_size
+    ) {
+        double total_loss = 0;
+        for (long long batch = 0; batch < X.rows(); batch += batch_size) {
+            auto batch_data = X.block(
+                    batch,
+                    0,
+                    std::min(X.rows() - batch, batch_size),
+                    X.cols()
+            );
+            auto batch_labels = y.block(
+                    batch,
+                    0,
+                    std::min(X.rows() - batch, batch_size),
+                    y.cols()
+            );
+            auto oneHotClasses = Utils::DataProcessing::OneHotEncode(batch_labels, 10);
+            auto output = module.Forward(batch_data);
+            total_loss += criterion.Forward(output, oneHotClasses);
         }
-        std::cout << std::endl;
+        std::cout << "Evaluation Loss: " << total_loss << std::endl;
     }
 }
 
 int main() {
-    Layers::LinearLayer linearLayer(2, 3, true, 45);
-    Eigen::Rand::P8_mt19937_64 urng = {42};
-    Base::Matrix x = Eigen::Rand::normal<Base::Matrix>(1, 2, urng);
-    std::cout << "x = \n" << x << std::endl;
-    AF::ReLU relu;
-//    print(linearLayer.GetParameters());
+    Matrix data = Utils::DataProcessing::LoadCSV("../data/mnist/mnist_train.csv");
+    Utils::Data data_struct = Utils::DataProcessing::SplitDataAndTarget(data);
 
+    Matrix test = Utils::DataProcessing::LoadCSV("../data/mnist/mnist_test.csv");
+    Utils::Data test_struct = Utils::DataProcessing::SplitDataAndTarget(test);
 
-//    Layers::Sequential nn(Layers::LinearLayer(2, 3, true, 45), AF::ReLU());
-    Layers::Sequential nn(Layers::LinearLayer(2, 3, true, 45), AF::ReLU());
-    std::cout << "--------" << std::endl;
-    std::cout << nn(x) << std::endl;
-    
-    
-    
-    
-    
-//    std::cout << relu(linearLayer(x)) << std::endl;
-
-    
+    Layers::Sequential nn(Layers::LinearLayer(784, 10), AF::Softmax());
+    Criterion::MSE mse;
+    Optimizers::SGD optimizer_sgd(&nn);
+    Train(nn, optimizer_sgd, mse, test_struct.data, test_struct.target, 32, 5, true);
+    Eval(nn, mse, test_struct.data, test_struct.target, 32);
 }
