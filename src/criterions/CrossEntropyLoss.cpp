@@ -1,9 +1,9 @@
 #include "CrossEntropyLoss.h"
 
 double Criterion::CrossEntropyLoss::operator()(const Base::Matrix &input, const Base::Matrix &target) {
-//   output_ = -1 /
-    return 0.0;
-    //todo
+    auto prob = sf(input).array().log().matrix();
+    output_ = -(prob.array() * target.array()).sum() / input.rows();
+    return output_;
 }
 
 double Criterion::CrossEntropyLoss::Forward(const Base::Matrix &input, const Base::Matrix &target) {
@@ -11,6 +11,6 @@ double Criterion::CrossEntropyLoss::Forward(const Base::Matrix &input, const Bas
 }
 
 Base::Matrix Criterion::CrossEntropyLoss::Backward(const Base::Matrix &input, const Base::Matrix &target) {
-    return Base::Matrix();
-    //todo
+    auto prob = sf(input).array().log().matrix();
+    return -1 / input.rows() / sf.Backward(input, target).array();
 }

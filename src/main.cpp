@@ -1,6 +1,5 @@
 #include <Eigen/Dense>
 #include <EigenRand/EigenRand>
-#include <unsupported/Eigen/CXX11/Tensor>
 #include <iostream>
 #include <vector>
 
@@ -12,7 +11,7 @@
 #include "CriterionTypeErasure.h"
 #include "DataProcessing.h"
 #include "SGD.h"
-#include "MSE.h"
+#include "CrossEntropyLoss.h"
 
 namespace {
     using Eigen::MatrixXd;
@@ -22,7 +21,7 @@ namespace {
     void Train(
             Layers::Sequential &module,
             Optimizers::SGD &optimizer,
-            Criterion::MSE &criterion,
+            Criterion::CrossEntropyLoss &criterion,
             Matrix &X,
             Matrix &y,
             long long batch_size,
@@ -59,7 +58,7 @@ namespace {
 
     void Eval(
             Layers::Sequential &module,
-            Criterion::MSE &criterion,
+            Criterion::CrossEntropyLoss &criterion,
             Matrix &X,
             Matrix &y,
             long long batch_size
@@ -94,8 +93,8 @@ int main() {
     Utils::Data test_struct = Utils::DataProcessing::SplitDataAndTarget(test);
 
     Layers::Sequential nn(Layers::LinearLayer(784, 10), AF::Softmax());
-    Criterion::MSE mse;
+    Criterion::CrossEntropyLoss cel;
     Optimizers::SGD optimizer_sgd(&nn);
-    Train(nn, optimizer_sgd, mse, test_struct.data, test_struct.target, 32, 5, true);
-    Eval(nn, mse, test_struct.data, test_struct.target, 32);
+    Train(nn, optimizer_sgd, cel, test_struct.data, test_struct.target, 32, 5, true);
+    Eval(nn, cel, test_struct.data, test_struct.target, 32);
 }

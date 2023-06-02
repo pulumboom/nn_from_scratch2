@@ -10,7 +10,7 @@ namespace Base {
 
         template<typename T>
         ModuleTypeErasure(T &&layer) : model_(
-                std::make_unique<Module<T>>(std::move(layer))
+                std::make_unique<Module<T>>(std::forward<T>(layer))
         ) {}
 
         ModuleTypeErasure(const ModuleTypeErasure &other) : model_(

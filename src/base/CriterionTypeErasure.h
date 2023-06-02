@@ -10,7 +10,7 @@ namespace Base {
 
         template<typename T>
         CriterionTypeErasure(T &&criterion) : model_(
-                std::make_unique<Criterion<T>>(std::move(criterion))
+                std::make_unique<Criterion<T>>(std::forward<T>(criterion))
         ) {}
 
 //        CriterionTypeErasure(const CriterionTypeErasure &other) : model_(

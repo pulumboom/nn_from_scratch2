@@ -2,6 +2,8 @@
 
 #include "CriterionInterface.h"
 
+#include "Softmax.h"
+
 namespace Criterion {
     class CrossEntropyLoss {
     public:
@@ -13,5 +15,6 @@ namespace Criterion {
 
     private:
         double output_;
+        AF::Softmax sf;
     };
 }
