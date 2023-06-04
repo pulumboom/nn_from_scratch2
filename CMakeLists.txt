@@ -20,6 +20,7 @@ add_executable(nn_from_scratch
         src/activation_functions/Sigmoid.cpp
         src/activation_functions/Softmax.cpp
         src/criterions/MSE.cpp
+        src/criterions/MAE.cpp
         src/criterions/CrossEntropyLoss.cpp
         src/optimizers/SGD.cpp
         src/utils/DataProcessing.cpp

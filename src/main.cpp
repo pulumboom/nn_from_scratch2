@@ -29,7 +29,6 @@ namespace {
             bool debug = true) {
         for (int epoch = 0; epoch < epochs; ++epoch) {
             double epoch_loss = 0;
-//            for (long long batch = 0; batch < X.rows(); batch += batch_size) {
             for (long long batch = 0; batch < 20; batch += batch_size) {
                 auto batch_data = X.block(
                         batch,
